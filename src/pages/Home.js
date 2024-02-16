@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div>
       <Header />
+      {/* <main> */}
       <h1>ACCUEIL</h1>
+      {/* </main> */}
       <Footer />
     </div>
   );
