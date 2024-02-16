@@ -1,7 +1,6 @@
 @import "vars";
 
-.main__error {
-  border: 1px solid red;
+.body__error {
   height: 700px;
   display: flex;
   flex-direction: column;
@@ -9,7 +8,6 @@
   align-items: center;
   color: $third-color;
   font-weight: 500;
-
   span {
     font-size: 288px;
     font-weight: 700;

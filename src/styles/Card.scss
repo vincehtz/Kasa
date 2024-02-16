@@ -1,0 +1,16 @@
+@import "vars";
+
+.card {
+  width: 340px;
+  height: 340px;
+  background-color: $third-color;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  h3 {
+    color: $second-color;
+    font-size: 18px;
+    font-weight: 700;
+  }
+}

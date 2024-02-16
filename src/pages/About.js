@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
 
 const About = () => {
   return (
     <React.Fragment>
       <Header />
       <main>
-        <h1>A PROPOS</h1>
+        <Banner />
       </main>
       <Footer />
     </React.Fragment>
