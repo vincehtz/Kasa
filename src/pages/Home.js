@@ -3,13 +3,18 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
+import homeCover from "../assets/banner-hp.png";
 
 const Home = () => {
   return (
     <React.Fragment>
       <Header />
       <main>
-        <Banner />
+        <Banner
+          cover={homeCover}
+          opacity="0.6"
+          title="Chez vous, partout et ailleurs"
+        />
         <Gallery />
       </main>
       <Footer />

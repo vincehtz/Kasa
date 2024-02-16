@@ -14,9 +14,9 @@ function Card({ name, cover }) {
   );
 }
 
-export default Card;
-
 Card.propTypes = {
   name: PropTypes.string,
   cover: PropTypes.string,
 };
+
+export default Card;
