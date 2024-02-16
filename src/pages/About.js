@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 
 const About = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
-      {/* <main> */}
-      <h1>A PROPOS</h1>
-      {/* </main> */}
+      <main>
+        <h1>A PROPOS</h1>
+      </main>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 

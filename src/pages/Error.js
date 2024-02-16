@@ -5,11 +5,13 @@ import Oups from "../components/Oups";
 
 const Error = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
-      <Oups />
+      <main>
+        <Oups />
+      </main>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 

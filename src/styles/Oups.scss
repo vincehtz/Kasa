@@ -1,8 +1,8 @@
 @import "vars";
 
-main {
+.main__error {
+  border: 1px solid red;
   height: 700px;
-  margin: 45px 100px 45px 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

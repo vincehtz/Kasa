@@ -1,16 +1,20 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Banner from "../components/Banner";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Header />
-      {/* <main> */}
-      <h1>ACCUEIL</h1>
-      {/* </main> */}
+      <main>
+        <h1>ACCUEIL</h1>
+        <Banner />
+        <Gallery />
+      </main>
       <Footer />
-    </div>
+    </React.Fragment>
   );
 };
 

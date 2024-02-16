@@ -4,11 +4,11 @@ import "../styles/Oups.scss";
 
 function Oups() {
   return (
-    <main>
+    <div className="main__error">
       <span>404</span>
       <p>Oups! La page que vous demandez n&apos;existe pas.</p>
       <NavLink to="/">Retourner sur la page d&apos;accueil</NavLink>
-    </main>
+    </div>
   );
 }
 
