@@ -1,6 +1,12 @@
 .gallery {
+  background-color: #f6f6f6;
+  border-radius: 25px;
   padding: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 59px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 59px;
 }
