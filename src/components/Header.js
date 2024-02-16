@@ -3,14 +3,19 @@ import { NavLink } from "react-router-dom";
 import "../styles/Header.scss";
 
 function Header() {
+  // Comportement (fonction)
+
+  // render (affichage)
   return (
     <header>
+      <img src="logo.png" alt="Logo KASA" />
       <nav className="navbar">
-        <img src="logo.png" alt="Logo KASA" className="navbar__logo" />
-        <div>
-          <NavLink to="/">Accueil</NavLink>
-          <NavLink to="/about">A Propos</NavLink>
-        </div>
+        <NavLink to="/" className="navbar__link">
+          Accueil
+        </NavLink>
+        <NavLink to="/about" className="navbar__link">
+          A Propos
+        </NavLink>
       </nav>
     </header>
   );

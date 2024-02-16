@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  height: 209px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .footer__logo {
+    border: 1px solid blue;
+    width: 122px;
+    height: 39.44px;
+  }
+  .footer__text {
+    border: 1px solid blue;
+    color: #ffffff;
+  }
+}
