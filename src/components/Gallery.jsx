@@ -11,7 +11,7 @@ function Gallery() {
   return (
     <div className="gallery">
       {logementsList.map((log) => {
-        return <Card key={log.id} name={log.title} />;
+        return <Card key={log.id} name={log.title} cover={log.cover} />;
       })}
     </div>
   );
