@@ -5,7 +5,7 @@ import "../styles/Header.scss";
 function Header() {
   return (
     <header>
-      <img src="logo.png" alt="Logo KASA" />
+      <img src="./assets/logo.png" alt="Logo KASA" />
       <nav>
         <NavLink to="/" className="navbar__link">
           Accueil

@@ -9,7 +9,6 @@ const Home = () => {
     <React.Fragment>
       <Header />
       <main>
-        <h1>ACCUEIL</h1>
         <Banner />
         <Gallery />
       </main>
