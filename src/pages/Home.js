@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
 import homeCover from "../assets/banner-hp.png";
 
-const Home = () => {
+function Home() {
   return (
     <React.Fragment>
       <Header />
@@ -20,6 +20,6 @@ const Home = () => {
       <Footer />
     </React.Fragment>
   );
-};
+}
 
 export default Home;

@@ -4,10 +4,6 @@ import Card from "./Card";
 import logementsList from "../data/logementsList.json";
 
 function Gallery() {
-  // state
-  // comportements
-
-  //affichage
   return (
     <div className="gallery">
       {logementsList.map((log) => {

@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Oups from "../components/Oups";
 
-const Error = () => {
+function Error() {
   return (
     <React.Fragment>
       <Header />
@@ -13,6 +13,6 @@ const Error = () => {
       <Footer />
     </React.Fragment>
   );
-};
+}
 
 export default Error;
