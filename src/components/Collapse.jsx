@@ -33,7 +33,10 @@ function Collapse({ title, content }) {
 
 Collapse.propTypes = {
   title: PropTypes.string,
-  content: PropTypes.string,
+  content: PropTypes.oneOfType([
+    PropTypes.string, // Le contenu peut être une chaîne de caractères
+    PropTypes.array, // Le contenu peut être un tableau de chaînes de caractères
+  ]),
   id: PropTypes.string,
 };
 

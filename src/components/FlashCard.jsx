@@ -11,15 +11,14 @@ function FlashCard() {
   const { productId } = useParams();
 
   const logementConsulte = logementsList.find((log) => log.id === productId);
-  console.log(logementConsulte);
 
   const profilePicStyle = {
     backgroundImage: `url(${logementConsulte.host.picture})`,
   };
 
-  logementConsulte.equipments.map((equipment) => {
-    console.log(equipment);
-  });
+  // logementConsulte.equipments.map((equipment) => {
+  //   console.log(equipment);
+  // });
 
   return (
     <div className="flashcard">
@@ -42,12 +41,21 @@ function FlashCard() {
               style={profilePicStyle}
             ></div>
           </div>
-          <RateScale />
+          {/* MODIFIER ICI */}
+          <RateScale scaleValue={logementConsulte.rating} />
         </div>
       </div>
       <div className="flashcard__collapses">
         <Collapse title="Description" content={logementConsulte.description} />
-        <Collapse title="Equipements" content={logementConsulte.equipments} />
+        <Collapse
+          title="Equipements"
+          content={logementConsulte.equipments.map((equip, i) => (
+            <span key={i}>
+              {equip}
+              <br />
+            </span>
+          ))}
+        />
       </div>
     </div>
   );
