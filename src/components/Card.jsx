@@ -9,7 +9,7 @@ function Card({ name, cover }) {
 
   return (
     <div className="card" style={cardStyle}>
-      <h3>{name}</h3>
+      <h2>{name}</h2>
     </div>
   );
 }

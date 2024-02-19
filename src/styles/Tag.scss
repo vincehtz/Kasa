@@ -1,0 +1,15 @@
+@import "vars";
+
+.tag {
+  min-width: 115px;
+  height: 25px;
+  padding: 0 20px 0 20px;
+  background-color: $third-color;
+  border-radius: 10px;
+  color: $second-color;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,61 @@
+@import "vars";
+
+.flashcard {
+  display: flex;
+  flex-direction: column;
+  .flashcard__info {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .flashcard__info__left-block {
+      h1 {
+        color: $third-color;
+        font-size: 36px;
+        font-weight: 500;
+      }
+      p {
+        color: $main-color;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      .flashcard__info__left-block__tags {
+        display: flex;
+        gap: 10px;
+      }
+    }
+    .flashcard__info__right-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .flashcard__info__right-block__host {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        h4 {
+          color: $third-color;
+          font-size: 18px;
+          font-weight: 500;
+          text-align: end;
+        }
+        .flashcard__info__right-block__host__picture {
+          background-size: 100%;
+          background-position: center;
+          width: 64px;
+          height: 64px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+  .flashcard__collapses {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+    .collapse {
+      width: 100%;
+    }
+  }
+}

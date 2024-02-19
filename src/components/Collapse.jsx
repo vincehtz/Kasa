@@ -1,24 +1,28 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Collapse.scss";
 
 function Collapse({ title, content }) {
   // state
   const [selected, setSelected] = useState(false);
+  const collapseContentClasses = `collapse__content ${selected ? "show" : ""}`;
+  const arrowUp = <FontAwesomeIcon icon={faAngleUp} />;
+  const arrowDown = <FontAwesomeIcon icon={faAngleDown} />;
 
   // comportements
   const handleClick = () => {
     setSelected(!selected);
   };
 
-  const collapseContentClasses = `collapse__content ${selected ? "show" : ""}`;
-
   // render
   return (
     <div className="collapse">
       <div className="collapse__title">
-        <h2>{title}</h2>
-        <span onClick={handleClick}>{selected ? "-" : "+"}</span>
+        <h3>{title}</h3>
+        <span onClick={handleClick}>{selected ? arrowDown : arrowUp}</span>
       </div>
       <div className={collapseContentClasses}>
         <p>{content}</p>
