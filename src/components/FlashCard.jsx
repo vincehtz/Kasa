@@ -16,10 +16,6 @@ function FlashCard() {
     backgroundImage: `url(${logementConsulte.host.picture})`,
   };
 
-  // logementConsulte.equipments.map((equipment) => {
-  //   console.log(equipment);
-  // });
-
   return (
     <div className="flashcard">
       <Carrousel pictures={logementConsulte.pictures} />
