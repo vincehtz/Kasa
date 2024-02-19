@@ -22,7 +22,7 @@ function FlashCard() {
 
   return (
     <div className="flashcard">
-      <Carrousel />
+      <Carrousel pictures={logementConsulte.pictures} />
       <div className="flashcard__info">
         <div className="flashcard__info__left-block">
           <h1>{logementConsulte.title}</h1>
