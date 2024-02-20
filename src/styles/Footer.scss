@@ -11,7 +11,20 @@ footer {
   color: $second-color;
   font-size: 24px;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  img {
+    max-width: 122px;
+  }
   .footer__text {
     margin: 40px 0 24px 0;
+
+    @media (max-width: 768px) {
+      max-width: 134px;
+      text-align: center;
+      margin: 10px 0 60px 0;
+    }
   }
 }

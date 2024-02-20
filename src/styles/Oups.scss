@@ -8,16 +8,34 @@
   align-items: center;
   color: $third-color;
   font-weight: 500;
+
+  @media (max-width: 768px) {
+    height: 500px;
+    justify-content: space-around;
+  }
   span {
     font-size: 288px;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 96px;
+    }
   }
   p {
     font-size: 36px;
     font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      text-align: center;
+    }
   }
   a {
     color: $main-color;
     font-size: 18px;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 }

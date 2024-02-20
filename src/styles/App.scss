@@ -6,11 +6,15 @@
 }
 
 body {
-  // max-width: 1440px;
+  border: 1px dashed black;
+  max-width: 1440px;
   margin: auto;
 }
 
 main {
   margin: 0 100px 0 100px;
-  border: 1px dashed orange;
+
+  @media (max-width: 768px) {
+    margin: 0 20px 0 20px;
+  }
 }

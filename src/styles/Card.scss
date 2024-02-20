@@ -4,13 +4,18 @@
   width: 100%;
   height: 340px;
   background-color: $third-color;
-  background-size: auto 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @media (max-width: 768px) {
+    max-height: 255px;
+    // background-size: 100% auto;
+  }
   h2 {
     color: $second-color;
     font-size: 18px;
