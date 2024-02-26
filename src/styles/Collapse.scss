@@ -19,6 +19,13 @@
     }
     span {
       cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      transform: rotate(0deg); /* Rotation par défaut */
+    }
+    span.selected {
+      transform: rotate(
+        180deg
+      ); /* Rotation lorsque l'élément est sélectionné */
     }
   }
   .collapse__content {

@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Carrousel from "./Carrousel";
 import Collapse from "./Collapse";
 import Tag from "./Tag";
@@ -11,6 +11,10 @@ function FlashCard() {
   const { productId } = useParams();
 
   const logementConsulte = logementsList.find((log) => log.id === productId);
+
+  if (!logementConsulte) {
+    return <Navigate to="/error" />;
+  }
 
   const profilePicStyle = {
     backgroundImage: `url(${logementConsulte.host.picture})`,
