@@ -7,7 +7,6 @@ import "../styles/Carrousel.scss";
 
 function Carrousel({ pictures }) {
   const [currentPicture, setCurrentPicture] = useState(0);
-  console.log(currentPicture);
 
   const arrowLeft = <FontAwesomeIcon icon={faAngleLeft} />;
   const arrowRight = <FontAwesomeIcon icon={faAngleRight} />;
@@ -23,8 +22,6 @@ function Carrousel({ pictures }) {
       return nextPic === pictures.length - 1 ? 0 : nextPic + 1;
     });
   };
-
-  console.log(currentPicture);
 
   return (
     <div className="flashcard__carrousel">
@@ -42,18 +39,22 @@ function Carrousel({ pictures }) {
           );
         })}
       </div>
-      <div className="carrousel__indicators">
-        {currentPicture + 1}/{pictures.length}
-      </div>
+      {pictures.length > 1 && (
+        <>
+          <div className="carrousel__indicators">
+            {currentPicture + 1}/{pictures.length}
+          </div>
 
-      <div className="carrousel__control">
-        <button className="carrousel__control-pev" onClick={leftBtnClick}>
-          {arrowLeft}
-        </button>
-        <button className="carrousel__control-next" onClick={rightBtnClick}>
-          {arrowRight}
-        </button>
-      </div>
+          <div className="carrousel__control">
+            <button className="carrousel__control-pev" onClick={leftBtnClick}>
+              {arrowLeft}
+            </button>
+            <button className="carrousel__control-next" onClick={rightBtnClick}>
+              {arrowRight}
+            </button>
+          </div>
+        </>
+      )}
     </div>
   );
 }

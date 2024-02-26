@@ -22,6 +22,8 @@
     }
   }
   .collapse__content {
+    margin-top: -20px;
+    padding: 20px;
     background-color: #f6f6f673;
     border-radius: 10px 10px 5px 5px;
     font-size: 18px;
@@ -29,13 +31,15 @@
     overflow: hidden;
     height: 0;
     transition: all 0.5s ease;
+    opacity: 0;
 
     @media (max-width: 768px) {
       font-size: 12px;
     }
   }
   .collapse__content.show {
-    padding: 20px;
+    margin-top: 0;
+    opacity: 1;
     height: auto; /* Définissez la hauteur sur 'auto' pour afficher tout le contenu */
     transition: all 0.5s ease; /* Ajoutez une transition pour la hauteur */
   }
